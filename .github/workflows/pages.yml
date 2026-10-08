@@ -1,0 +1,43 @@
+name: Deploy MILEMARK to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Check deployment entry points
+        run: |
+          test -f dist/index.html
+          test -f dist/kom-i-gang.html
+          test -f dist/cykel-og-udstyr.html
+          test -f dist/din-forste-tur.html
+          test -f dist/css/styles.css
+          test -f dist/js/main.js
+      - name: Upload existing static deployment package
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

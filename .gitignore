@@ -1,0 +1,17 @@
+.idea/
+.qa/
+node_modules/
+.vscode/
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+# Local credentials and machine-specific configuration; keep all design/source assets.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/

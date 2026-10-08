@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brug den interaktive tjekliste, planlæg en overkommelig rute, og få råd til din første tur på landevejen.">
+  <meta name="theme-color" content="#344b3f">
+  <title>Klar til din første tur? | MILEMARK</title>
+  <link rel="preload" href="assets/fonts/manrope-800.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#indhold">Spring til indhold</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MILEMARK – Forside"><img src="assets/images/milemark-logo.png" width="600" height="60" alt="MILEMARK"></a>
+      <a class="button button-small" href="kom-i-gang.html">Kom i gang <span class="arrow" aria-hidden="true">→</span></a>
+      <button class="nav-toggle" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="hovednavigation"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="site-nav" id="hovednavigation" aria-label="Hovednavigation">
+      <ul><li><a href="index.html">Forside</a></li><li><a href="kom-i-gang.html">Kom i gang</a></li><li><a href="cykel-og-udstyr.html">Cykel &amp; udstyr</a></li><li><a href="din-forste-tur.html" aria-current="page">Din første tur</a></li></ul>
+    </nav>
+  </header>
+  <main id="indhold">
+    <section class="hero hero-ride" aria-labelledby="hero-title">
+      <picture class="hero-media">
+        <source media="(max-width: 767px)" srcset="assets/images/hero-forste-tur-900.webp">
+        <img src="assets/images/hero-forste-tur.webp" width="1800" height="1013" alt="" fetchpriority="high">
+      </picture>
+      <div class="container hero-content">
+        <h1 id="hero-title">Klar til din<br><span class="accent">første</span> tur?</h1>
+        <p class="hero-copy">Med den rette forberedelse kan din første landevejstur blive en god oplevelse. Her guider vi dig fra planlægning af rute til tips undervejs.</p>
+        <div class="hero-actions"><a class="button " href="#tjekliste">Bliv klar <span class="arrow" aria-hidden="true">→</span></a><a class="text-link" href="#ruteplan">Planlæg din tur <span class="arrow" aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+    <div class="container page-section ride-layout">
+      <section id="tjekliste" aria-labelledby="checklist-title">
+        <h2 id="checklist-title">Tjek at du er klar<span class="accent">.</span></h2>
+        <div class="checklist" data-checklist>
+          <fieldset><legend class="sr-only">Forberedelse før din første tur</legend>
+            <label><input type="checkbox" id="klar-cykel" name="cykel"><span>Cyklen er klar og i god stand</span></label>
+            <label><input type="checkbox" id="klar-hjelm" name="hjelm"><span>Hjelmen er klar og indstillet</span></label>
+            <label><input type="checkbox" id="klar-vand" name="vand"><span>Vandflaske og lidt energi</span></label>
+            <label><input type="checkbox" id="klar-toej" name="toej"><span>Tøj efter vejret</span></label>
+            <label><input type="checkbox" id="klar-mobil" name="mobil"><span>Mobil og lygter</span></label>
+            <label><input type="checkbox" id="klar-rute" name="rute"><span>Planlagt rute</span></label>
+          </fieldset>
+          <div class="checklist-status" hidden><p role="status" aria-live="polite" aria-atomic="true" data-checklist-status></p></div>
+        </div>
+        <p class="checklist-note" data-storage-note hidden>Dine valg gemmes kun i denne browser. Du kan altid fjerne krydserne igen.</p>
+      </section>
+      <section id="ruteideer" aria-labelledby="routes-title">
+        <h2 id="routes-title">Forslag til din første tur<span class="accent">.</span></h2>
+        <p class="route-intro">Tre idéer til en tur i dit nærområde. Billederne er inspiration og viser ikke dokumenterede ruter. Vælg selv en kort, overskuelig rute med et underlag og en trafikmængde, du er tryg ved.</p>
+        <div class="cards">
+          <article class="card route-card">
+              <div class="card-photo"><img src="assets/images/rute-kyst.webp" alt="" width="700" height="467" loading="lazy"></div>
+              <span class="badge">Ruteidé</span>
+              <div class="card-body">
+
+                <h3>Kysten rundt</h3>
+                <p>Åbne vidder og udsigt til vandet.</p>
+
+              <details><summary>Sådan planlægger du turen</summary><p>Vælg en kort strækning langs kysten med asfalt og overskuelig trafik. Tjek vinden, og undgå en lang hjemtur i modvind. Vend om, mens du stadig har overskud.</p></details></div>
+            </article>
+          <article class="card route-card">
+              <div class="card-photo"><img src="assets/images/rute-landsby.webp" alt="" width="700" height="467" loading="lazy" class="landscape-portrait"></div>
+              <span class="badge">Ruteidé</span>
+              <div class="card-body">
+
+                <h3>Landsbyruten</h3>
+                <p>Små veje og en pause undervejs.</p>
+
+              <details><summary>Sådan planlægger du turen</summary><p>Find en kort sløjfe mellem steder, du kender. Se efter rolige, asfalterede veje, og planlæg en pause. Undersøg trafikken og krydsene, før du kører.</p></details></div>
+            </article>
+          <article class="card route-card">
+              <div class="card-photo"><img src="assets/images/rute-skov.webp" alt="" width="700" height="467" loading="lazy"></div>
+              <span class="badge">Ruteidé</span>
+              <div class="card-body">
+
+                <h3>Skov &amp; sø</h3>
+                <p>Grønne omgivelser i dit eget tempo.</p>
+
+              <details><summary>Sådan planlægger du turen</summary><p>Vælg asfalterede veje nær skov eller sø. Kontrollér underlaget, så du ikke ender på løst grus med smalle dæk. Vælg en rute med mulighed for at forkorte turen.</p></details></div>
+            </article>
+        </div>
+      </section>
+    </div>
+    <section class="container page-section guide-details" aria-labelledby="ride-advice-title">
+      <h2 id="ride-advice-title">Gør den første tur overkommelig<span class="accent">.</span></h2>
+      <div class="detail-grid">
+        <article class="detail" id="ruteplan"><p class="eyebrow">Før turen</p><h3>Planlæg med overskud</h3><p>Vælg en kort og gerne flad tur tæt på hjemmet. En rute, hvor du kan vende om, gør det nemt at tilpasse turen til dagsformen.</p><ul><li>Se ruten igennem på et kort, og undersøg underlaget.</li><li>Undgå store, trafikerede veje og komplicerede kryds, når du kan.</li><li>Tjek vejret, og vælg gerne dagslys til den første tur.</li><li>Fortæl eventuelt en ven, hvor du kører.</li></ul><p>Gem ruten, så du kan finde hjem uden mobildækning.</p></article>
+        <article class="detail" id="undervejs"><p class="eyebrow">På turen</p><h3>Find dit eget tempo</h3><p>Start roligt med et tempo, hvor du har overskud. Hold pauser, drik undervejs, og vend hjem før turen føles for lang.</p><ul><li>Øv gearskift og bremsning et roligt sted først.</li><li>Hold øje med trafik og underlag, og følg færdselsreglerne.</li><li>Kør forudsigeligt, og giv plads til andre.</li><li>Kør gerne med en ven, som respekterer dit tempo.</li></ul></article>
+        <article class="detail" id="efter-turen"><p class="eyebrow">Efter turen</p><h3>Tag erfaringen med</h3><p>Overvej, hvad der føltes godt, og hvad der skal justeres. Var sadlen behagelig? Havde du vand nok? Passede ruten til dig?</p><p>Den næste tur må gerne ligne den første. Du kan øge længden lidt ad gangen, når du føler dig klar.</p><a class="text-link" href="cykel-og-udstyr.html#vedligeholdelse">Se råd til cyklens pleje <span class="arrow" aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html" aria-label="MILEMARK – Forside"><img src="assets/images/milemark-logo.png" alt="MILEMARK" width="600" height="60" loading="lazy"></a>
+        <p>© 2026 MILEMARK – Studieprojekt</p>
+      </div>
+      <details class="footer-section" open>
+        <summary>UDFORSK <span class="footer-chevron" aria-hidden="true"></span></summary>
+        <nav aria-label="Udforsk MILEMARK"><ul>
+          <li><a href="index.html">Forside <span aria-hidden="true">→</span></a></li>
+          <li><a href="kom-i-gang.html">Kom i gang <span aria-hidden="true">→</span></a></li>
+          <li><a href="cykel-og-udstyr.html">Cykel &amp; udstyr <span aria-hidden="true">→</span></a></li>
+          <li><a href="din-forste-tur.html">Din første tur <span aria-hidden="true">→</span></a></li>
+        </ul></nav>
+      </details>
+      <details class="footer-section" open>
+        <summary>HURTIG ADGANG <span class="footer-chevron" aria-hidden="true"></span></summary>
+        <nav aria-label="Hurtig adgang"><ul>
+          <li><a href="index.html#guider">Alle guides</a></li>
+          <li><a href="din-forste-tur.html#ruteideer">Ruteidéer</a></li>
+          <li><a href="cykel-og-udstyr.html#vedligeholdelse">Udstyr og vedligeholdelse</a></li>
+          <li><a href="kom-i-gang.html#trin">Kom i gang som ny cyklist</a></li>
+        </ul></nav>
+      </details>
+      <details class="footer-section footer-policy" open>
+        <summary>POLITIK <span class="footer-chevron" aria-hidden="true"></span></summary>
+        <div class="footer-policy-info">
+          <details class="footer-note"><summary>Privatliv og lagring</summary><p>Tjeklistens krydser gemmes lokalt i din browser. De sendes ikke til MILEMARK. Fjern dem via browserens webstedsdata.</p></details>
+          <details class="footer-note"><summary>Cookies</summary><p>Sitet sætter ingen cookies og bruger ingen analytics.</p></details>
+          <details class="footer-note"><summary>Om studieprojektet</summary><p>MILEMARK er et fiktivt studieprojekt uden webshop, konti eller tjenestevilkår.</p></details>
+        </div>
+      </details>
+      <div class="footer-social" role="img" aria-label="Instagram, Facebook og YouTube – profiler er ikke tilknyttet">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.7" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="1"/></svg></span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M13.5 20v-7h2l.4-3h-2.4V8.5c0-.8.3-1.2 1.2-1.2H16V4.7c-.5-.1-1.2-.2-2-.2-2 0-3.5 1.3-3.5 3.7V10H8v3h2.5v7" fill="var(--color-primary)"/></svg></span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 8 6 4-6 4Z" fill="var(--color-primary)"/></svg></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Values from Figma and the local Style Tile; spacing adapted for readable content. */
+:root {
+  --color-background: #ffffff;
+  --color-warm: #f5f2ea;
+  --color-primary: #344b3f;
+  --color-primary-hover: #26392e;
+  --color-ink: #252a27;
+  --color-accent: #d9a36c;
+  --color-sage: #d9e0d3;
+  --color-border: #dce1da;
+  --color-muted: #59645d;
+  --font-heading: 'Manrope', Arial, sans-serif;
+  --font-body: 'DM Sans', Arial, sans-serif;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --radius-card: 1rem;
+  --radius-small: .5rem;
+  --radius-pill: 100rem;
+  --shadow-card: 0 2px 5px rgb(37 42 39 / 10%);
+  --shadow-card-hover: 0 6px 14px rgb(37 42 39 / 12%);
+  --content-width: 80rem;
+  --page-gutter: clamp(1.25rem, 4.5vw, 4rem);
+  --motion-fast: 150ms;
+  --motion-standard: 240ms;
+  --motion-slow: 360ms;
+  --motion-stagger: 60ms;
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+  --motion-distance: 10px;
+  --transition: var(--motion-standard) var(--motion-ease);
+  /* Content breakpoints: 48rem for columns, 72rem for full navigation.
+     CSS custom properties cannot be used in media query conditions. */
+}
